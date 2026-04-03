@@ -1,0 +1,22 @@
+* { box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+body { background-color: #f5f5f5; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+
+canvas { background: white; border: 2px solid #3b82f6; border-radius: 10px; cursor: crosshair; box-shadow: 0 10px 30px rgba(0,0,0,0.1); touch-action: none;}
+
+.toolbox { background: #1e293b; color: white; display: flex; border-radius: 10px; margin-bottom: 20px; padding: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+.toolbox > * {
+    background-color: transparent; border: none; font-size: 1.2rem;
+    color: white; padding: 10px 15px; cursor: pointer; transition: 0.2s;
+    border-radius: 5px; margin: 0 5px;
+}
+
+.toolbox > *:hover { background: rgba(255,255,255,0.1); }
+#size { display: inline-flex; align-items: center; justify-content: center; width: 40px; font-weight: 600;}
+#color { cursor: pointer; padding: 5px; height: 100%; border-radius: 50%; border: none; background: transparent; width: 45px;}
+input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+input[type="color"]::-webkit-color-swatch { border: none; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.3);}
+
+#clear, #save { background: #3b82f6; font-weight: 600;}
+#clear:hover, #save:hover { background: #2563eb; }
